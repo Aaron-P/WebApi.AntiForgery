@@ -61,7 +61,7 @@ namespace WebApi.AntiForgery {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;{0}&lt;/title&gt;&lt;/head&gt;&lt;input type=&quot;hidden&quot; id=&quot;{1}&quot; value=&quot;{2}&quot;&gt;&lt;/html&gt;&lt;!--{3}--&gt;.
+        ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;&amp;#x1F512;&lt;/title&gt;&lt;/head&gt;&lt;input type=&quot;hidden&quot; id=&quot;{0}&quot; value=&quot;{1}&quot;&gt;&lt;/html&gt;&lt;!--{2}--&gt;.
         /// </summary>
         internal static string TokenTemplateHtml {
             get {

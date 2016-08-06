@@ -37,14 +37,6 @@ namespace WebApi.AntiForgery
             }
         }
 
-        internal static string Title
-        {
-            get
-            {
-                return GetConfig().Title;
-            }
-        }
-
         private static ConfigSection GetConfig()
         {
             return (ConfigSection)ConfigurationManager.GetSection(ConfigSection.SectionName) ?? new ConfigSection();
@@ -60,8 +52,6 @@ namespace WebApi.AntiForgery
         private const string _Id = "id";
         private const string _IdDefault = "VerificationToken";
         private const string _SecureCookie = "secureCookie";
-        private const string _Title = "title";
-        private const string _TitleDefault = "&#128273;";
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         [ConfigurationProperty(_HstsMaxAge, IsKey = false, IsRequired = false, DefaultValue = 0)]
@@ -119,22 +109,6 @@ namespace WebApi.AntiForgery
             set
             {
                 base[_SecureCookie] = value;
-            }
-        }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        [ConfigurationProperty(_Title, IsKey = false, IsRequired = false, DefaultValue = _TitleDefault)]
-        [RegexStringValidator(@"^[^<>]+$")]
-        internal string Title
-        {
-            get
-            {
-                var value = (string)base[_Title];
-                return String.IsNullOrWhiteSpace(value) ? _TitleDefault : value;
-            }
-            set
-            {
-                base[_Title] = value;
             }
         }
     }

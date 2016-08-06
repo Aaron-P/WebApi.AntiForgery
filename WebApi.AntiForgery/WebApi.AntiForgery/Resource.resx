@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="TokenTemplateHtml" xml:space="preserve">
-    <value>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;{0}&lt;/title&gt;&lt;/head&gt;&lt;input type="hidden" id="{1}" value="{2}"&gt;&lt;/html&gt;&lt;!--{3}--&gt;</value>
-    <comment>This will be passed 4 arguments: {0} = title, {1} = id, {2} = token, {3} = filler</comment>
+    <value>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;&amp;#x1F512;&lt;/title&gt;&lt;/head&gt;&lt;input type="hidden" id="{0}" value="{1}"&gt;&lt;/html&gt;&lt;!--{2}--&gt;</value>
+    <comment>This will be passed 3 arguments: {0} = id, {1} = token, {2} = filler</comment>
   </data>
   <data name="TokenTemplateJson" xml:space="preserve">
     <value>{0}{{"{1}":"{2}","{3}":0}}</value>

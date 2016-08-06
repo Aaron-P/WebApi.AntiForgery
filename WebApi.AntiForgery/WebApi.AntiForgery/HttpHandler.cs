@@ -139,7 +139,7 @@ namespace WebApi.AntiForgery
 
             //TODO: Output some random/random-length data with the response on secure connections? This can help against certain https attacks.
             Response.StatusCode = (int)HttpStatusCode.OK;
-            writer.Write(String.Format(CultureInfo.InvariantCulture, Resource.TokenTemplateHtml, Configuration.Title, HttpUtility.HtmlEncode(Configuration.Id), HttpUtility.HtmlEncode(tokens.Item2), HttpUtility.HtmlEncode(filler)));
+            writer.Write(String.Format(CultureInfo.InvariantCulture, Resource.TokenTemplateHtml, HttpUtility.HtmlEncode(Configuration.Id), HttpUtility.HtmlEncode(tokens.Item2), HttpUtility.HtmlEncode(filler)));
             base.Render(writer);
         }
     }
