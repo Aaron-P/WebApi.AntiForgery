@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.AntiForgery", "WebApi.AntiForgery\WebApi.AntiForgery.csproj", "{AC85617E-5BBC-478F-BBD5-80C09E466A6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.AntiForgery.Sample", "WebApi.AntiForgery.Sample\WebApi.AntiForgery.Sample.csproj", "{840A5D4E-BF34-4E9A-A071-B114C59FB42A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{247006B7-6C01-409B-83F4-1D4AE37DD036}"
+	ProjectSection(SolutionItems) = preProject
+		tslint.json = tslint.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseNuget|Any CPU = ReleaseNuget|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC85617E-5BBC-478F-BBD5-80C09E466A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC85617E-5BBC-478F-BBD5-80C09E466A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC85617E-5BBC-478F-BBD5-80C09E466A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC85617E-5BBC-478F-BBD5-80C09E466A6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC85617E-5BBC-478F-BBD5-80C09E466A6F}.ReleaseNuget|Any CPU.ActiveCfg = ReleaseNuget|Any CPU
+		{AC85617E-5BBC-478F-BBD5-80C09E466A6F}.ReleaseNuget|Any CPU.Build.0 = ReleaseNuget|Any CPU
+		{840A5D4E-BF34-4E9A-A071-B114C59FB42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840A5D4E-BF34-4E9A-A071-B114C59FB42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840A5D4E-BF34-4E9A-A071-B114C59FB42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840A5D4E-BF34-4E9A-A071-B114C59FB42A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{840A5D4E-BF34-4E9A-A071-B114C59FB42A}.ReleaseNuget|Any CPU.ActiveCfg = Release|Any CPU
+		{840A5D4E-BF34-4E9A-A071-B114C59FB42A}.ReleaseNuget|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

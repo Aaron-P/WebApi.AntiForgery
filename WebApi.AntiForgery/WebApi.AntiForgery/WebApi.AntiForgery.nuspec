@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>WebApi.AntiForgery</id>
+    <version>$version$</version>
+    <title>WebApi.AntiForgery</title>
+    <authors>Aaron Papp</authors>
+    <owners>Aaron Papp</owners>
+    <licenseUrl>https://github.com/Aaron-P/WebApi.AntiForgery/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/Aaron-P/WebApi.AntiForgery</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>A .NET library for generating anti-forgery tokens for web api.</description>
+    <copyright>Copyright © 2016 Aaron Papp</copyright>
+    <language>en-US</language>
+    <tags>AntiForgery Anti-Forgery AspNetWebApi WebApi</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" />
+      <frameworkAssembly assemblyName="System.configuration" />
+      <frameworkAssembly assemblyName="System.Core" />
+      <frameworkAssembly assemblyName="System.Net.Http" />
+      <frameworkAssembly assemblyName="System.Web" />
+      <frameworkAssembly assemblyName="System.Xml" />
+    </frameworkAssemblies>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.Razor" version="3.2.3" />
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.3" />
+      <dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.3" />
+      <dependency id="Microsoft.AspNet.WebPages" version="3.2.3" />
+      <dependency id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
+      <dependency id="Newtonsoft.Json" version="6.0.4" />      
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\$targetFile$" target="lib" />
+    <!--<file src="Scripts\AntiForgery.ts" target="content\Scripts" />-->
+    <!--<file src="Scripts\AntiForgery.js" target="content\Scripts\jquery.AntiForgery.js" />-->
+    <!--<file src="Scripts\AntiForgery.min.js" target="content\Scripts\jquery.AntiForgery.min.js" />-->
+    <file src="Scripts\AntiForgery.js" target="content\Scripts" />
+    <file src="Scripts\AntiForgery.min.js" target="content\Scripts" />
+    <file src="README.txt" />
+  </files>
+</package>
