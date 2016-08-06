@@ -9,6 +9,10 @@
 /WebApi.AntiForgery/WebApi.AntiForgery.Sample/Content/bootstrap.css
 /WebApi.AntiForgery/WebApi.AntiForgery.Sample/Content/bootstrap.min.css
 /WebApi.AntiForgery/WebApi.AntiForgery.Sample/fonts/glyphicons-halflings-regular.*
+/WebApi.AntiForgery/WebApi.AntiForgery.Sample/Scripts/AntiForgery.js
+/WebApi.AntiForgery/WebApi.AntiForgery.Sample/Scripts/AntiForgery.js.map
+/WebApi.AntiForgery/WebApi.AntiForgery.Sample/Scripts/AntiForgery.min.js
+/WebApi.AntiForgery/WebApi.AntiForgery.Sample/Scripts/AntiForgery.min.js.map
 /WebApi.AntiForgery/WebApi.AntiForgery.Sample/Scripts/bootstrap.js
 /WebApi.AntiForgery/WebApi.AntiForgery.Sample/Scripts/bootstrap.min.js
 /WebApi.AntiForgery/WebApi.AntiForgery.Sample/Scripts/jquery-*.intellisense.js
@@ -19,11 +23,16 @@
 /WebApi.AntiForgery/WebApi.AntiForgery.Sample/Scripts/respond.js
 /WebApi.AntiForgery/WebApi.AntiForgery.Sample/Scripts/respond.min.js
 /WebApi.AntiForgery/WebApi.AntiForgery.Sample/Scripts/typings/*
+/WebApi.AntiForgery/WebApi.AntiForgery/Scripts/AntiForgery.js
+/WebApi.AntiForgery/WebApi.AntiForgery/Scripts/AntiForgery.js.map
+/WebApi.AntiForgery/WebApi.AntiForgery/Scripts/AntiForgery.min.js
+/WebApi.AntiForgery/WebApi.AntiForgery/Scripts/AntiForgery.min.js.map
 /WebApi.AntiForgery/WebApi.AntiForgery/Scripts/jquery-*.intellisense.js
 /WebApi.AntiForgery/WebApi.AntiForgery/Scripts/jquery-*.js
 /WebApi.AntiForgery/WebApi.AntiForgery/Scripts/jquery-*.min.js
 /WebApi.AntiForgery/WebApi.AntiForgery/Scripts/jquery-*.min.map
 /WebApi.AntiForgery/WebApi.AntiForgery/Scripts/typings/*
+
 
 #################
 ## Eclipse
