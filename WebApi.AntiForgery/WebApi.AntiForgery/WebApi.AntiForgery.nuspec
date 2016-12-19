@@ -9,7 +9,7 @@
     <licenseUrl>https://github.com/Aaron-P/WebApi.AntiForgery/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/Aaron-P/WebApi.AntiForgery</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>A .NET library for generating anti-forgery tokens for web api.</description>
     <copyright>Copyright © 2016 Aaron Papp</copyright>
     <language>en-US</language>
     <tags>AntiForgery Anti-Forgery AspNetWebApi WebApi</tags>
