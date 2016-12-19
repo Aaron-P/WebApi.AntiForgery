@@ -72,7 +72,7 @@
     <Compile Include="HttpHandlerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="web.config.transform" />
-    <Content Include="README.txt" />
+    <None Include="README.txt" />
     <None Include="TODO.txt" />
     <Compile Include="Resource.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -127,6 +127,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>if "$(ConfigurationName)" == "ReleaseNuget" CALL nuget pack "$(ProjectPath)" -Symbols -Properties Configuration="$(ConfigurationName)" -outputdirectory "$(SolutionDir)\"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'ReleaseNuget'">
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
