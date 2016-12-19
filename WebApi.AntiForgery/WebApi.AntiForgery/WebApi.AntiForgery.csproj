@@ -66,10 +66,13 @@
     <Compile Include="AntiForgery.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="HttpHandler.cs" />
+    <Compile Include="HttpHandler.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="HttpHandlerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="README.txt" />
+    <None Include="TODO.txt" />
     <Compile Include="Resource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,13 +90,13 @@
     <Content Include="Scripts\AntiForgery.min.js">
       <DependentUpon>AntiForgery.js</DependentUpon>
     </Content>
-    <Content Include="Scripts\jquery-2.2.4.intellisense.js">
+    <None Include="Scripts\jquery-2.2.4.intellisense.js">
       <DependentUpon>jquery-2.2.4.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\jquery-2.2.4.js" />
-    <Content Include="Scripts\jquery-2.2.4.min.js">
+    </None>
+    <None Include="Scripts\jquery-2.2.4.js" />
+    <None Include="Scripts\jquery-2.2.4.min.js">
       <DependentUpon>jquery-2.2.4.js</DependentUpon>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -119,14 +122,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>if "$(ConfigurationName)" == "ReleaseNuget" CALL del "$(SolutionDir)\$(ProjectName).*.nupkg"</PreBuildEvent>
+    <PreBuildEvent>if "$(ConfigurationName)" == "ReleaseNuget" CALL del "$(SolutionDir)$(ProjectName).*.nupkg"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEventDependsOn>
-      $(PostBuildEventDependsOn);
-      PostBuildMacros;
-    </PostBuildEventDependsOn>
-    <PostBuildEvent>if "$(ConfigurationName)" == "ReleaseNuget" CALL nuget pack "$(ProjectDir)\$(ProjectName).nuspec" -Properties Configuration="$(ConfigurationName)";Version=@(VersionNumber);TargetFile=$(TargetFileName) -outputdirectory "$(SolutionDir)\"</PostBuildEvent>
+    <PostBuildEvent>if "$(ConfigurationName)" == "ReleaseNuget" CALL nuget pack "$(ProjectPath)" -Symbols -Properties Configuration="$(ConfigurationName)" -outputdirectory "$(SolutionDir)\"</PostBuildEvent>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -136,12 +135,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <Target Name="PostBuildMacros">
-    <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
-      <Output TaskParameter="Assemblies" ItemName="Targets" />
-    </GetAssemblyIdentity>
-    <ItemGroup>
-      <VersionNumber Include="@(Targets->'%(Version)')" />
-    </ItemGroup>
-  </Target>
 </Project>
