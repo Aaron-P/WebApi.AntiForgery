@@ -13,21 +13,21 @@
     <copyright>Copyright © 2016 Aaron Papp</copyright>
     <language>en-US</language>
     <tags>AntiForgery Anti-Forgery AspNetWebApi WebApi</tags>
-    <frameworkAssemblies>
+    <!--<frameworkAssemblies>
       <frameworkAssembly assemblyName="System" />
       <frameworkAssembly assemblyName="System.configuration" />
       <frameworkAssembly assemblyName="System.Core" />
       <frameworkAssembly assemblyName="System.Net.Http" />
       <frameworkAssembly assemblyName="System.Web" />
       <frameworkAssembly assemblyName="System.Xml" />
-    </frameworkAssemblies>
-    <dependencies>
+    </frameworkAssemblies>-->
+    <!--dependencies>
       <dependency id="Microsoft.AspNet.Razor" version="3.2.3" />
       <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.3" />
       <dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.3" />
       <dependency id="Microsoft.AspNet.WebPages" version="3.2.3" />
       <dependency id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
       <dependency id="Newtonsoft.Json" version="6.0.4" />      
-    </dependencies>
+    </dependencies>-->
   </metadata>
 </package>

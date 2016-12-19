@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="HttpHandlerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="web.config.transform" />
     <Content Include="README.txt" />
     <None Include="TODO.txt" />
     <Compile Include="Resource.Designer.cs">

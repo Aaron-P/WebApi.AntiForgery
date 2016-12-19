@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="webApi.antiForgery" requirePermission="false" type="WebApi.AntiForgery.ConfigSection,WebApi.AntiForgery" />
+  </configSections>
+  <system.webServer>
+    <handlers>
+      <add name="WebApi.AntiForgery" verb="GET" path="token.axd" preCondition="integratedMode" type="WebApi.AntiForgery.HttpHandlerFactory,WebApi.AntiForgery" />
+    </handlers>
+  </system.webServer>
+  <webApi.antiForgery />
+</configuration>
