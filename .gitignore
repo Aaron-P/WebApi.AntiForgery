@@ -267,3 +267,5 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+/WebApi.AntiForgery/WebApi.AntiForgery.Sample/Content

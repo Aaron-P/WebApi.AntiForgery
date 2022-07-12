@@ -83,9 +83,16 @@
     </Compile>
     <Compile Include="HttpHandlerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
     <Content Include="web.config.transform" />
     <None Include="app.config" />
     <None Include="README.txt" />
+    <None Include="Scripts\jquery-3.6.0.min.map" />
+    <None Include="Scripts\jquery-3.6.0.slim.min.map" />
     <None Include="TODO.txt" />
     <Compile Include="Resource.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -104,13 +111,6 @@
     <Content Include="Scripts\AntiForgery.min.js">
       <DependentUpon>AntiForgery.js</DependentUpon>
     </Content>
-    <None Include="Scripts\jquery-2.2.4.intellisense.js">
-      <DependentUpon>jquery-2.2.4.js</DependentUpon>
-    </None>
-    <None Include="Scripts\jquery-2.2.4.js" />
-    <None Include="Scripts\jquery-2.2.4.min.js">
-      <DependentUpon>jquery-2.2.4.js</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -119,9 +119,6 @@
     </None>
     <None Include="Scripts\AntiForgery.min.js.map">
       <DependentUpon>AntiForgery.min.js</DependentUpon>
-    </None>
-    <None Include="Scripts\jquery-2.2.4.min.map">
-      <DependentUpon>jquery-2.2.4.min.js</DependentUpon>
     </None>
     <None Include="WebApi.AntiForgery.nuspec" />
   </ItemGroup>
