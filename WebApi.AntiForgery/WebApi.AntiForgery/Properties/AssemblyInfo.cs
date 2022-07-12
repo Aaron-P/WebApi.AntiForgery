@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("WebApi.AntiForgery")]
-[assembly: AssemblyCopyright("Copyright © 2016 Aaron Papp")]
+[assembly: AssemblyCopyright("Copyright © 2016-2022 Aaron Papp")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

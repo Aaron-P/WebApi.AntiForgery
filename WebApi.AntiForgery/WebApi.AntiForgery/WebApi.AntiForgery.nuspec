@@ -6,11 +6,11 @@
     <title>WebApi.AntiForgery</title>
     <authors>Aaron Papp</authors>
     <owners>Aaron Papp</owners>
-    <licenseUrl>https://github.com/Aaron-P/WebApi.AntiForgery/blob/master/LICENSE.md</licenseUrl>
+    <license type="expression">MIT</license>
     <projectUrl>https://github.com/Aaron-P/WebApi.AntiForgery</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
-    <copyright>Copyright © 2016 Aaron Papp</copyright>
+    <copyright>Copyright © 2016-2022 Aaron Papp</copyright>
     <language>en-US</language>
     <tags>AntiForgery Anti-Forgery AspNetWebApi WebApi</tags>
     <!--<frameworkAssemblies>
